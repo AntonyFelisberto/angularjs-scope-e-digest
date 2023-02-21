@@ -1,0 +1,2 @@
+# angularjs scope e digest
+ 
