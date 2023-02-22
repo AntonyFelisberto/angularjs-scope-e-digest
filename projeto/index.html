@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="learndigest">
   <head>
     <meta charset="utf-8">
     <title>Scope and Digest</title>
@@ -7,10 +7,18 @@
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
   </head>
-  <body ng-app="learndigest">
-    <div ng-controller="PlaygroundCtrl">
-      I LOOOOOVE angular
+  <body ng-controller="PlaygroundCtrl">
+    <div>
+      {{welcome}}
     </div>
 
+    <input type="number" ng-model="number_choice">
+    <p>{{"number choiced is "+ number_choice}}</p>
+    <button ng-click="resetNumber()">Reset</button>
+
+    <div ng-controller="InternalCtrl">
+      {{variables}}
+    </div>
+    
   </body>
 </html>
